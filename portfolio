@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Armea S, Pring</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0F090B;
+      color: #da57d6;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 36px;
+      color: #c544ad;
+    }
+    .navbar {
+      background: #362834;
+      padding: 20px 40px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: right;
+      gap: 20px;
+    }
+    .navbar a {
+      color: #ef32d9;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .navbar a:hover {
+      color: #8B7069;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: #362828;
+      color: #ab3c9e;
+    }
+    .hero h1 {
+      font-size: 48px;
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background: #63514F;
+      padding: 10px 20px;
+      border: none;
+      color: #c557ad;
+      font-size: 16px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #8B7069;
+    }
+    .about {
+      background: #362828;
+      padding: 50px 20px;
+    }
+    .about-content {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .profile-pic {
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .about-content .text {
+      max-width: 600px;
+    }
+    .about-content .text h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #af84ad;
+    }
+    .about-content .text p {
+      margin-bottom: 15px;
+    }
+    .social-icons a {
+      color: #ae84af;
+      text-decoration: none;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+    .social-icons a:hover {
+      color: #8b6986;
+    }
+    .skills {
+      background: #251C1C;
+      padding: 50px 20px;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .skill-item {
+      background: #362828;
+      padding: 20px;
+      border-radius: 10px;
+      color: #af84af;
+      font-size: 18px;
+    }
+
+    /* Projects Section */
+    .projects {
+      background: #0F090B;
+      padding: 50px 20px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project-item {
+      background: #251C1C;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+.project-item img {
+  max-width: 90%; 
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+    .project-item h3 {
+      color: #ad84af;
+      margin-bottom: 10px;
+    }
+
+    .project-item a {
+      color: #9e3da0;
+      text-decoration: none;
+    }
+
+    .project-item a:hover {
+      color: #af84a6;
+    }
+    .contact {
+      background: #362828;
+      padding: 50px 20px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background: #251C1C;
+      color: rgb(227, 119, 220);
+    }
+
+    .contact-form button {
+      background: #634f61;
+      padding: 10px 20px;
+      border: none;
+      color: rgb(229, 121, 227);
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: #b888b3;
+    }
+  </style>
+</head>
+<body>
+ 
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+<section>
+    <div class="hero-content">
+      <h1>Hello, My Name is</h1>
+      <h2>Armea S. Pring</h2>
+      <p class="role"></p><br>
+      <a href="" class="btn">RESUME</a>
+    </div>
+  </header>
+  </section>
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="" alt="Profile Picture" class="">
+        <div class="text">
+          <h3>I’m Armea S. Pring</h3>
+          <p><strong></strong>  <strong></strong>.</p>
+          <p>
+            .
+          </p>
+          <p>.</p>
+          <div class="social-icons">
+            <a href="">LinkedIn</a>
+            <a hr"">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Programming Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">C++</div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-item">
+          <img src="" alt="Project 1">
+          <h3>Crud</h3>
+          <p>CRUD is just a fancy way of saying you can add, see, change, or delete stuff in a system</p>
+          <a href="" style="color: #c070c3;">View Project</a>
+        </div>
+        <div class="">
+          <img src="" alt="Project 2" style="  max-width: 26%; 
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;">
+          <h3></h3>
+          <p>.</p>
+          <a href="" style="color: #c370bf">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <p style="text-align: center; font-size: 20px">&copy; 2025 Armea S. Pring. All rights reserved.</p>
+  </footer>
+</body>
+</html>
